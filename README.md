@@ -21,7 +21,7 @@
 |--------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | POST   | Добавление нового запроса                | `curl -X POST "http://127.0.0.1:8000/applications" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"user_name\": \"string\", \"description\": \"string\"}` |
 | GET    | Получение списка запросов           | `curl http://127.0.0.1:8000/applications`   [http://127.0.0.1:8000/applications](http://127.0.0.1:8000/applications)                                                                |
-| GET    | Получение списка запросов с указанием номера страницы и количеством запросов         | `curl http://127.0.0.1:8000/applications?user_name=string&page=3&size=20`   [http://127.0.0.1:8000/applications?user_name=string&page=3&size=20](http://127.0.0.1:8000/applications?user_name=string&page=3&size=20)              |
+| GET    | Получение списка запросов с фильтрацией по имени, указанием номера и размера страницы         | `curl http://127.0.0.1:8000/applications?user_name=string&page=3&size=20`   [http://127.0.0.1:8000/applications?user_name=string&page=3&size=20](http://127.0.0.1:8000/applications?user_name=string&page=3&size=20)              |
 
 
 Для тестирования приложения:
