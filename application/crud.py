@@ -8,7 +8,7 @@ async def new_application(db, application):
     db_application = models.Application(
         user_name=application.user_name,
         description=application.description,
-        created_at=datetime.now(timezone.utc),
+        created_at=datetime.now(),
     )
     db.add(db_application)
     await db.commit()
